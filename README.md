@@ -4,7 +4,7 @@
 
 [deploy](https://rolling-scopes-school.github.io/mrreedus-JSFEPRESCHOOL2022Q4/plants/)
 
-Двустраничный объёмный landing page.Реализована адаптивная вёрстка, функционал блюра категорий, аккордеоны и селект на чистом JS.
+Двустраничный объёмный landing page.Реализована адаптивная вёрстка, функционал блюра категорий, аккордеон и селект на чистом JS.
 
 ## 2. Conquest
 
@@ -21,7 +21,7 @@
 
 ## 4. Colors
 
-Проект на чистом JS с генерированием рандомных цветов при нажатии _space_, с сохраненнием кодов цветов в хэше.
+Проект на чистом JS с генерированием рандомных цветов при нажатии _space_.
 
 [source](https://github.com/MrReedus/colors)
 [deploy](https://mrreedus.github.io/colors)
@@ -34,7 +34,7 @@ Elite-fire
 
 [deploy](https://mrreedus.github.io/Elite-fire/)
 
-## 6. technomart
+## 6. Technomart
 
 Мой первый проект.
 Фиксированная Вёрстка трёх страниц сайта интернет магазина. Главная, каталог, форма с кастомными чекбоксами.
