@@ -1,0 +1,208 @@
+.collection {
+  background-image: url("../src/images/Ellipse.png");
+  background-repeat: no-repeat;
+  background-position: 48%;
+}
+.collection__container {
+  display: flex;
+  gap: 114px;
+  padding-right: 114px;
+  padding-left: 120px;
+}
+.collection__info {
+  padding-top: 236px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+}
+.collection__title {
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 16px;
+}
+.collection__subtitle {
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 39px;
+}
+.collection__description {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  max-width: 207px;
+  margin-bottom: 20px;
+}
+.collection__button {
+  background-color: #444240;
+  &:hover {
+    background-color: lighten(#444240, 10);
+  }
+}
+
+.button {
+  width: 205px;
+  height: 64px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.collection__card {
+  max-width: 700px;
+  display: flex;
+  position: relative;
+  img {
+    flex-grow: 3;
+    max-width: 502px;
+    height: 804px;
+  }
+}
+
+.card__price,
+.card__description {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  align-items: center;
+  font-family: "Prata";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  position: absolute;
+}
+.card__price {
+  max-width: 140px;
+  align-self: flex-start;
+  padding-top: 138px;
+  left: -50px;
+  svg {
+    margin-left: 7px;
+    margin-right: 15px;
+  }
+}
+.card__description {
+  width: 187px;
+  text-transform: lowercase;
+  align-self: flex-end;
+  padding-bottom: 116px;
+  left: 400px;
+  gap: 15px;
+}
+
+.card__line {
+  display: block;
+  width: 50px;
+  height: 1px;
+  background-color: #8b8371;
+}
+
+@media (max-width: 1279.98px) {
+  .collection {
+    background-position: 78% -40%;
+    background-size: 28% 94%;
+  }
+  .collection__container {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .collection__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .collection__subtitle {
+    font-size: 25px;
+  }
+
+  .collection__card {
+    img {
+      max-width: 502px * 0.6;
+      height: 804px * 0.6;
+    }
+  }
+  .card__price,
+  .card__description {
+    font-size: 12px;
+  }
+
+  .card__price {
+    left: -70px;
+  }
+
+  .card__description {
+    left: 230px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .collection {
+    background-position: 20% -106%;
+    background-size: 40% 80%;
+  }
+  .collection__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .collection__info {
+    padding-top: 36px;
+  }
+
+  .collection__card {
+    order: -1;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .collection {
+    background-position: 22% -143%;
+    background-size: 40% 79%;
+  }
+
+  .collection__card {
+    flex-direction: column;
+    img {
+      max-width: 502px * 0.4;
+      height: 804px * 0.4;
+    }
+
+    .card__price,
+    .card__description {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      align-items: center;
+      font-family: "Prata";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      position: static;
+    }
+
+    .card__price {
+      padding-top: 20px;
+      align-self: flex-end;
+      margin-bottom: 5px;
+
+      .card__line {
+        order: -1;
+        margin-right: 10px;
+      }
+    }
+    .card__description {
+      padding-top: 12px;
+      padding-bottom: 20px;
+      align-self: flex-start;
+      // text-align: center;
+      .card__line {
+        order: 2;
+      }
+    }
+  }
+}

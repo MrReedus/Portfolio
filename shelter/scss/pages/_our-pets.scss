@@ -1,0 +1,180 @@
+.our-pets {
+    padding-top: 120px;
+
+    .header {
+        padding: 30px 0px 30px 0px;
+        height: 120px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+        background-color: #fff;
+            .logo__title {color: #545454;}
+            .logo__description{color:#292929;}
+            .menu__link {
+                color: #545454;
+                &:hover {
+                    color: #292929;
+                }
+            }
+            .menu__toggler {
+                & span,
+                &::before,
+                &::after  {
+                    background-color: #545454;
+            }     
+        }
+    } 
+}
+
+.our-pets {
+    .our-friends__title {
+        padding-bottom: 45px;
+    }
+
+    .pets__wrapper {
+        max-width: 1200px;
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 40px;
+        row-gap: 30px;
+        margin: 0px 0px 0px 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+    }
+}
+
+.pagination__list {
+    display: flex;
+    gap: 20px;
+    padding: 45px 0px 0px 0px;
+    justify-content: center;
+}
+
+.pagination {
+    padding: 0;
+    margin: 0 auto;
+}
+ 
+
+.pagination__item  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 100px;
+    border: 2px solid #F1CDB3;
+    transition: 0.3s;
+        &:not(.selected):not(.disabled)
+        { 
+            cursor: pointer;
+                &:hover {
+                    background-color:#FDDCC4;
+                    border: 2px solid #FDDCC4;
+                }
+                &:active {
+                    background-color: #F1CDB3;
+                    border: 2px solid #F1CDB3;
+                }
+        }
+}
+
+.pagination-active {
+    background-color:#F1CDB3;
+}
+        
+.disabled {
+    border: 2px solid #CDCDCD;
+    color: #CDCDCD;
+}
+
+.selected {
+    .pagination__link {
+        cursor: inherit;
+    }
+}
+
+.pagination__link {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    color: #292929; 
+}
+
+
+
+
+@media (max-width: 1279.98px) {
+    .our-pets {
+        .header {
+            padding: 30px 0px 30px 0px;  
+        }
+        .pets__wrapper {
+           max-width: 580px;
+           justify-content: space-around;
+           row-gap: 30px;
+           padding: 0;
+           margin: 0px auto 40px auto;
+        }
+       
+        .pets__item:nth-child(3),
+        .pets__item:nth-child(2) {
+            display: flex;
+        }
+
+        .pets__item:nth-last-child(1),
+        .pets__item:nth-last-child(2) {
+            display: none;
+        }
+       
+        .pagination__list {
+            padding: 0px;
+            margin-bottom: 0px;
+        }
+
+        .our-friends__container {
+            padding-bottom: 76px;
+        }
+
+        .our-friends__title {
+                padding-bottom: 30px; 
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .our-pets {
+        .pets__wrapper {
+            padding: 0 15px;
+            margin-bottom: 42px;
+        }
+        .pets__item:nth-last-child(3),
+        .pets__item:nth-last-child(4),
+        .pets__item:nth-last-child(5) {
+            display: none;
+        }
+        .our-friends__title {
+            padding-bottom: 42px; 
+        }
+        .pagination__list {
+            gap: 10px;
+        }
+        .our-friends__container {
+            margin-bottom: 0;
+            padding-bottom: 44px;
+        }
+        .pets__button {
+            line-height: 130%;
+        }
+    }
+}
+

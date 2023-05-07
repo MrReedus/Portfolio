@@ -1,0 +1,157 @@
+.header {
+    padding: 60px 0px 60px 0px;
+    color: #fff;
+    min-height: 60px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+}
+
+.logo{
+}
+
+.logo__title {
+    color: #f1cdb3;
+    font-size: 32px;
+    font-family: "Georgia";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    margin-bottom: 10px;
+    letter-spacing: 0.06em;
+}
+
+.logo__description {
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+    margin-left: 4px;
+}
+
+.header__navigation {
+    color: #fafafa;
+}
+
+.menu__body {
+    padding: 16px 0px 20px 0px;
+    display: flex;
+    gap: 35px;
+}
+
+.menu__item {
+    line-height: 160%;
+}
+
+.menu__link {
+    color: #CDCDCD;
+    transition: 0.2s;
+        &:hover {
+            color: #FAFAFA;
+        }
+        &:active {
+            border-bottom: 3px solid #F1CDB3;
+        }
+    }
+
+.active {  
+     border-bottom: 3px solid #F1CDB3;
+}
+
+
+//!burger-menu
+.menu__toggler {
+    display: none
+}
+
+
+
+
+@media (max-width: 1279.98px) {
+
+    [class*="__container"] {
+            padding: 0px 30px;
+    }
+        
+    .header {
+        padding: 30px 0px 60px 0px;  
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    [class*="__container"] {
+        padding: 0px 10px;
+    }
+    
+    .menu__body {
+        padding: 158px 29px 0px 29px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #292929;
+        width: 320px;
+        transition: all 0.3s ease 0s;
+        transform: translate(100%, 0);
+        display: flex;
+        flex-direction: column;
+        z-index: 4;
+            li {
+                font-size: 32px;
+                line-height: 160%;
+            }
+            &._active {
+                transform: translate(0px, 0px);
+            }
+    }
+    .header__logo {
+        z-index: 10;
+    }
+        
+    .menu__toggler {
+        display: block;
+        width: 30px;
+        height: 22px;
+        z-index: 5;
+        position: relative;
+        cursor: pointer;
+        margin-right: 43px;
+        transition: all 0.5s ease 0s;
+            & span,
+            &::before,
+            &::after  {
+                position: absolute;
+                left: 0;
+                height: 2px;
+                width: 100%;
+                transition: all 0.3s ease 0s;
+                background-color: #F1CDB3;
+            }
+            &::before,
+            &::after {
+                content: "";
+            }
+            &::before {
+                top: 0;
+            }
+            &::after {
+                bottom: 0;
+            }
+            & span {
+                top: 45%;
+            }
+    }
+
+    .menu__toggler._active {
+        transform: rotateZ(90deg);
+    }
+}
+

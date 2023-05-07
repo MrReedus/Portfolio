@@ -1,0 +1,30 @@
+//!VARIABLES
+
+$main-color: #1b1a17;
+
+//! FONTS
+
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap");
+
+@import "_Nullstyles.scss";
+@import "_Header.scss";
+@import "_Collection.scss";
+@import "_Popular.scss";
+@import "_Quality.scss";
+@import "_News.scss";
+@import "_Footer.scss";
+@import "_Toggle-menu.scss";
+
+@media (max-width: 1279.98px) {
+  [class*="__container"] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 768.98px) {
+  [class*="__container"] {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
