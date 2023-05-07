@@ -14,7 +14,7 @@
 
 ## 3. Cozy-House
 
-[deploy](https://mrreedus.github.io/D-F-Tigers-IT-Start/projects/ырудеу/)
+[deploy](https://rolling-scopes-school.github.io/mrreedus-JSFE2022Q1/shelter/)
 
 Двустраничный объёмный landing page.
 Реализована адаптивная вёрстка с использованием препроцессора scss
